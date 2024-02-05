@@ -1,0 +1,12 @@
+<h1>Starships</h1>
+<li><a href="/">Home</a></li>
+<table>
+    <tr>
+        <th>Name</th>
+    </tr>
+    <% starships.forEach(starship => { %>
+        <tr>
+            <td><%= starship %></td>
+        </tr>
+    <% }); %>
+</table>
