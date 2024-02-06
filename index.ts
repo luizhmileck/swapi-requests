@@ -5,6 +5,7 @@ import charactersRoute from './routes/characters';
 import planetsRoute from './routes/planets';
 import starshipsRoute from './routes/starships';
 import moviesRoute from './routes/movies'
+import searchRoute from './routes/searchMovies'; 
 
 // Set up static files
 
@@ -31,6 +32,7 @@ app.use('/characters', charactersRoute);
 app.use('/planets', planetsRoute);
 app.use('/starships', starshipsRoute);
 app.use('/movies', moviesRoute)
+app.use('/search', searchRoute)
 
 // Define route for serving the main page
 app.get('/', (req, res) => {
