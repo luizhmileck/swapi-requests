@@ -1,12 +1,12 @@
-<h1>Planets</h1>
+<h1>Movies</h1>
 <li><a href="/">Home</a></li>
 <table>
     <tr>
         <th>Name</th>
     </tr>
-    <% Movies.forEach(movie => { %>
+    <% movies.forEach(movie => { %>
         <tr>
-            <td><%= Movies %></td>
+            <td><%= movie.title %></td>
         </tr>
     <% }); %>
 </table>
