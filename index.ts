@@ -1,10 +1,10 @@
 import express from 'express';
 import path from 'path';
 import dotenv from 'dotenv';
-import expressLayouts from 'express-ejs-layouts';
 import charactersRoute from './routes/characters';
 import planetsRoute from './routes/planets';
 import starshipsRoute from './routes/starships';
+import moviesRoute from './routes/movies'
 
 // Set up static files
 
@@ -30,6 +30,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/characters', charactersRoute);
 app.use('/planets', planetsRoute);
 app.use('/starships', starshipsRoute);
+app.use('/movies', moviesRoute)
 
 // Define route for serving the main page
 app.get('/', (req, res) => {
