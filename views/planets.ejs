@@ -1,0 +1,12 @@
+<h1>Planets</h1>
+<li><a href="/">Home</a></li>
+<table>
+    <tr>
+        <th>Name</th>
+    </tr>
+    <% planets.forEach(planet => { %>
+        <tr>
+            <td><%= planet %></td>
+        </tr>
+    <% }); %>
+</table>

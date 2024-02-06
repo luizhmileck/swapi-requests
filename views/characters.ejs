@@ -1,0 +1,12 @@
+<h1>Characters</h1>
+<li><a href="/">Home</a></li>
+<table>
+    <tr>
+        <th>Name</th>
+    </tr>
+    <% characters.forEach(character => { %>
+        <tr>
+            <td><%= character %></td>
+        </tr>
+    <% }); %>
+</table>

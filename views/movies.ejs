@@ -1,0 +1,19 @@
+<h1>Movies</h1>
+    <!-- Search form -->
+    <form action="/search" method="GET">
+        <label for="search">Search:</label>
+        <input type="text" id="search" name="q">
+        <button type="submit">Search</button>
+    </form>
+    <br>
+    <li><a href="/">Home</a></li>
+    <table>
+        <tr>
+            <th>Name</th>
+        </tr>
+        <% movies.forEach(movie => { %>
+            <tr>
+                <td><%= movie.title %></td>
+            </tr>
+        <% }); %>
+    </table>
